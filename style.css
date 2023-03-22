@@ -1,0 +1,127 @@
+:root {
+    --cor-fundo: #f2c6e5;
+    --cor-hover: #eeeeac;
+    --cor-primaria: #ffffff;
+}
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+}
+.menu ul {
+    background-color: var(--cor-fundo);
+
+}
+.menu ul li {
+    display: inline;
+    position: relative;
+}
+.menu ul li a {
+    color: #ca3a59;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    transition: background .3s;
+}
+.menu ul li a:hover {
+    background-color: var(--cor-hover);
+}
+.menu ul ul {
+    display: none;
+    left: 0;
+    position: absolute;
+}
+.menu ul li:hover ul {
+    display: block;
+}
+.menu ul ul {
+    width: 150px;
+}
+.menu ul ul li a {
+    display: block;
+}
+.destaques ul li {
+    background-color: var(--cor-hover);
+}
+.destaques {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+.destaques ul li a {
+    text-decoration: #ffffff;
+}
+main>header {
+    color: black;
+    background-color: var(--cor-hover);
+    width: 450px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    font-weight: 1000;
+    font-size: 25px;
+}
+.produtos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.produto {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.produto p {
+    background-color: var(--cor-hover);
+    color: whitesmoke;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 8px 10px;
+    font-size: 15px;
+}
+.produto p:hover {
+    transform: rotate(-2deg);
+}
+footer {
+    width: 100%;
+    min-height: 250px;
+    background: #f2c6e5;
+    display: flex;
+}
+footer .boxs {
+    width: 320px;
+    min-height: 150px;
+    padding: 30px;
+}
+footer .boxs:nth-child(4) {
+    width: 400px;
+}
+.boxs h2 {
+    color: rgb(12, 12, 12);
+    margin-bottom: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+.boxs ul lo {
+    margin: 15px -30px;
+    list-style: none;
+    display: block;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+}
+.boxs ul lo a {
+    color: #1a1a1a;
+    text-decoration: none;
+}
+.boxs ul lo a>:hover {
+    color: var(--cor-hover);
+}
+#info {
+    text-align: center;
+    font-size: 14px;
+    color: #565454;
+}
+#sobre {
+    text-align: justify;
+    font-style: italic;
+}
